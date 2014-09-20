@@ -1,0 +1,33 @@
+My structure of PAT tree
+
+																ROOT
+																 |
+														/				 \
+													Value				Value
+												  /       			 /			\
+											Value				Value			Value
+											Frequency	--->	Frequency --->  Frequency
+											Type  				Type			Type
+											Leaf=true			Leaf=true		Leaf=true
+
+
+											
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word1 -> Suffix1(Frequency, type)	-> Suffix2	...
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word2 -> Suffix1(Frequency, type)	-> Suffix2	...
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word3 -> Suffix1(Frequency, type)	-> Suffix2	...
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word4 -> Suffix1(Frequency, type)	-> Suffix2	...
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word5 -> Suffix1(Frequency, type)	-> Suffix2	...												
+						...	Prefix2 <-	Prefix1(Frequency, Type)	<-	Word6 -> Suffix1(Frequency, type)	-> Suffix2	...
+
+
+pat tree operations:
+1. Initiliaze PAT Tree
+2. insert
+3. travel
+4. delete
+
+
+5. search
+6. get_frqn
+7. get_type
+8.  
