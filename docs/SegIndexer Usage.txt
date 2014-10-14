@@ -1,0 +1,26 @@
+SegIndexer  index                    [will generate a default .ndx file with the same filename]
+                --file filename
+                --text text         --out out_file_name
+                --dir directory
+            wordfreq                 [first find .ndx file, if there is no index file, generate PAT tree]
+                --word word    --file  from_file
+                --word word    --text  from_text
+                --word word    --dir   directory
+            wordleft                 [first find .ndx file, then build PAT tree]
+                --word word [--num N]  --file  from_file
+                --word word [--num N]  --dir   from_dir
+            wordright                [first find .ndx file, then build PAT tree]
+                --word word [--num N]  --file  from_file
+                --word word [--num N]  --dir   from_dir
+            help
+                index
+                wordfreq
+                wordleft
+                wordright
+
+命令详解：
+SegIndexer index        : 生成索引文件，可以指定为一个文件生成，也可以指定为一段文本生成索引文件，也支持为一个目录下所有的文件生成索引。
+SegIndexer wordfreq     : 统计一个词的频次。可以查询统计该词在某一个文本中的频次，或在一个目录中的出现频次，或者一段文本中
+SegIndexer wordleft     : 打印一个词的左边N个词语。可以指定是打印一个文件中的左词还是打印一个目录中的所有文件中的左词。通过--num参数指定N的具体个数
+SegIndexer wordright    : 打印一个词的右边N个词语。可以指定是打印一个文件中的右词还是打印一个目录中的所有文件中的右词。通过--num参数指定N的具体个数
+SegIndexer help         : 帮助命令，可以查询具体每个命令的使用方法。
